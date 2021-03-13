@@ -35,5 +35,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          repository: melkio/react-to-docker
-          tags: latest
+          push: true
+          tags: | 
+            melkio/react-to-docker:latest
+            ghcr.io/melkio/react-to-docker:latest
