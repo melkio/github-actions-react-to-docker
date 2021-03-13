@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           registry: ghcr.io
-          username: "melkio"
+          username: ${{ github.actor }}
           password: ${{ secrets.CONTAINER_REGISTRY_TOKEN }}
-          repository: melckio/react-to-docker
+          repository: melkio/react-to-docker
           tags: latest
